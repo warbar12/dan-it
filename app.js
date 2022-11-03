@@ -30,7 +30,7 @@ if (userAge < 18){
 }
 if(userAge >= 18 && userAge <=22){
   const answer = confirm("Are you sure you want to continue?")
-  if(answer !== true){
+  if(!answer){
     alert(`You are not allowed to visit this website.`)
   }else{
     alert(`Welcome, ${userName}`)
