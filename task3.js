@@ -21,7 +21,7 @@
 
 let number = +prompt("Введите число!");
 
-while(Number.isInteger(number) == false){
+while(!Number.isInteger(number)){
   number = +prompt("Введите целое число!")
 }
 
@@ -38,9 +38,9 @@ if( number < 5){
 let m = +prompt("Введите начальное число!");
 let n = +prompt("Введите конечное число!");
 
-while(Number.isInteger(m) == false || Number.isInteger(n) == false ){
-  m = +prompt("Введите заново начальное число!");
-  n = +prompt("Введите заново конечное число!")
+while(!Number.isInteger(m) || !Number.isInteger(n)){
+  m = +prompt("Введите заново начальное число!") || m;
+  n = +prompt("Введите заново конечное число!") || n;
 }
 
 if(m >= n){
