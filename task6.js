@@ -17,7 +17,7 @@
 const arr = ['hello', 'world', 23, '23', null, undefined, 44, 5.7, {}, true, false, 9007199254740991n]
 
 const filterBy = (arr, typeArr) =>{
-  const result = arr.filter(item => typeof item === typeArr)
+  const result = arr.filter(item => typeof item !== typeArr)
   return result 
 }
 console.log(filterBy(arr, 'string'))
