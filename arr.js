@@ -130,11 +130,11 @@ const flatten = (array) => {
   * Ожидаемый результат: ([1, 2, 3, 4, 5], 2) => [[1, 2], [3, 4], [5]]
 */
 const chunk = (array, size) => {
-  let subarray = []; //массив в который будет выведен результат.
+  let sub = []; //массив в который будет выведен результат.
   for (let i = 0; i <Math.ceil(array.length/size); i++){
     subarray[i] = array.slice((i*size), (i*size) + size);
   }
-  return subarray
+  return sub
  }
  
  const data3 = [1, 2, 3, 4, 5, 6, 7];
