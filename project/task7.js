@@ -12,10 +12,7 @@
 */
 
 const paragraf = document.querySelectorAll("p")
-
-for(let a of paragraf) {
-  a.style.backgroundColor = "#ff0000";
-}
+paragraf.forEach(element => element.style.backgroundColor = "#ff0000")
 
 const list = document.getElementById("optionsList");
 const father = list.parentElement // нашли батька
@@ -23,15 +20,11 @@ const children = list.children // нашли дочерние ноды
 const testParagraph = document.getElementById("testParagraph");
 testParagraph.textContent = "This is a paragraph";
 
-// const mainHeader = document.getElementsByClassName("main-header");
-// const q = [...mainHeader]
-// q?.childNodes?.forEach(el => el.nodeType === 1 && el.classList.add('nav-item'))
-
 const sectionTitle = document.querySelectorAll(".section-title");
 sectionTitle.forEach(element => element.classList.remove('section-title'));
+
 console.log(list);
 console.log(father);
 console.log(children);
-// console.log(mainHeader);
 console.log(sectionTitle);
 
