@@ -9,7 +9,7 @@ const e = ["Kharkiv", "Kiev", ["Borispol", "Irpin"], "Odessa", "Lviv", "Dnieper"
 
 const data = [["Регион города - 1", "Регион города - 2"], "Kharkiv", "Kiev", 
 ["Borispol",["Село под городом - 1", "Село под городом - 2"], "Irpin"],
-"Odessa", "Lviv", "Dnieper"];
+"Odessa", "Lviv", "Dnieper",["Село под городом - 1", "Село под городом - 2",["Село под городом - 1", "Село под городом - 2"]]];
 
 
 const getList = (arr, parent = document.body) => {
@@ -20,7 +20,8 @@ const getList = (arr, parent = document.body) => {
     const itemTitle = document.createElement('h3');
 
     if(!!Array.isArray(item)){
-      const parrentItem = list.childNodes[index - 1];
+      const parrentItem = list.childNodes[index - 1] || list.childNodes[index - 2];  // тут костыль???
+
       const childrenList = document.createElement('ul');
 
       addItemToList(item, childrenList)
@@ -59,5 +60,3 @@ function fun() {
 }
 const inter = setInterval("fun()", 1000);
 fun()
-
-creat
