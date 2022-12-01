@@ -1,3 +1,10 @@
+/*
+1) - createElement.
+2) - insertAdjacentHTML(position) - определяет позицию добавляемого элемента относительно элемента, вызвавшего метод.
+beforebegin - до открывающего тега, afterbegin - перед первым потомком, beforeend - после последнего потомка, afterend - после закрывающего тега.
+3) - remove() удаляет элемент из DOM-дерева, в котором он находится.
+*/
+
 const e = ["Kharkiv", "Kiev", ["Borispol", "Irpin"], "Odessa", "Lviv", "Dnieper"];
 
 const data = [["Регион города - 1", "Регион города - 2"], "Kharkiv", "Kiev", 
@@ -53,3 +60,4 @@ function fun() {
 const inter = setInterval("fun()", 1000);
 fun()
 
+creat
