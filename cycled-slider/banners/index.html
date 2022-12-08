@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Banners</title>
+    <style>
+      .image-to-show {
+        width: 400px;
+        height: 400px;
+        display: none;
+      }
+      
+      .images-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .image-to-show.active{
+        display: flex;
+      }
+      .button{
+        max-width: 400px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between; 
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .span{
+        font-size: 20px;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="span">Картинка измениться каждые 3с, новая картинка через - <span id="timer"></span>с</span> 
+      <div class="images-wrapper">
+        <img src="./img/1.jpg" alt="image of game" class="image-to-show active" />
+        <img src="./img/2.jpg" alt="image of game" class="image-to-show " />
+        <img src="./img/3.JPG" alt="image of game" class="image-to-show "/>
+        <img src="./img/4.png" alt="image of game" class="image-to-show " />
+      </div>
+      <div class="button">
+        <button id="pause">Припинити</button>
+        <button id="play">Відновити показ</button>
+      </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
