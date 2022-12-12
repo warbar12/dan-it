@@ -12,7 +12,7 @@ const pause = document.getElementById('pause')
 let isPaused = true;
 let startTime = Date.now();
 
-window.setInterval(function showImg() {
+setInterval(function showImg() {
 
   if (isPaused) { 
 
@@ -21,9 +21,10 @@ window.setInterval(function showImg() {
       if (isPaused) { 
         const elapsedTime = Date.now() - startTime;
         const timer = document.getElementById("timer");
-        timer.innerText = (elapsedTime / 1000).toFixed(2)
+        timer.innerText = (elapsedTime / 1000).toFixed(2);
         
-      if(timer.innerText >= 3.01) newDate()
+      if(timer.innerText >= 3.01) newDate();
+
     }
 
     }, 10); 
@@ -32,14 +33,14 @@ window.setInterval(function showImg() {
     const nextImg = img.nextElementSibling;
   
     if (!!nextImg) {
-      img.classList.remove('active')
-      nextImg.classList.add('active')
+      img.classList.remove('active');
+      nextImg.classList.add('active');
     }
   
     if (!nextImg) {
       const firstImg = document.querySelector('.image-to-show');
-      firstImg.classList.add('active')
-      img.classList.remove('active')
+      firstImg.classList.add('active');
+      img.classList.remove('active');
     }
   
   }
