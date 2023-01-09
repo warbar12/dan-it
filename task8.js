@@ -20,7 +20,7 @@ const getList = (arr, parent = document.body) => {
     const itemTitle = document.createElement('h3');
 
     if(!!Array.isArray(item)){
-      const parrentItem = list.childNodes[index - 1] || list.childNodes[index - 2];  // тут костыль???
+      const parrentItem = list.childNodes[index - 1] || list.childNodes[index - 2]
 
       const childrenList = document.createElement('ul');
 
@@ -49,14 +49,14 @@ const getList = (arr, parent = document.body) => {
 getList(data)
 
 // таймер обратного отсчета
-let t = 3;
-let time = document.getElementsByClassName("clock")[0];
+// let t = 3;
+// let time = document.getElementsByClassName("clock")[0];
 
-function fun() {
-  t--
-  time.innerHTML = t;
-  if(t < 0) clearInterval(inter);
-  if(t === 0) document.body.remove()
-}
-const inter = setInterval("fun()", 1000);
-fun()
+// function fun() {
+//   t--
+//   time.innerHTML = t;
+//   if(t < 0) clearInterval(inter);
+//   if(t === 0) document.body.remove()
+// }
+// const inter = setInterval("fun()", 1000);
+// fun()
