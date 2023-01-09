@@ -1,0 +1,28 @@
+{
+  "name": "project-x",
+  "version": "1.0.0",
+  "description": "Selezen Andrew PE-11",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/warbar12/dan-it.git"
+  },
+  "author": "Andrew",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/warbar12/dan-it/issues"
+  },
+  "homepage": "https://github.com/warbar12/dan-it#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "browser-sync": "^2.27.11",
+    "eslint": "^8.31.0"
+  }
+}
