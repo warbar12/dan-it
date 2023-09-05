@@ -37,10 +37,11 @@ const books = [
 books.forEach((item, index) =>{
   let objectLength = Object.keys(item).length;
   try{
-    if (typeof item['author'] === "undefined")console.log(`У обьекта под номером - ${index} нету поля автора`);
-    if (typeof item['name'] === "undefined")console.log(`У обьекта под номером - ${index} нету поля наименования`);
-    if (typeof item['price'] === "undefined")console.log(`У обьекта под номером - ${index} нету поля прайс`);
-  }finally{
+    if (typeof item['author'] === "undefined") console.log(`У обьекта под номером - ${index} нету поля автора`);
+    if (typeof item['name'] === "undefined")   console.log(`У обьекта под номером - ${index} нету поля наименования`);
+    if (typeof item['price'] === "undefined")  console.log(`У обьекта под номером - ${index} нету поля прайс`);
+  }
+  finally{
     if(objectLength === 3){
       const html = 
         `<ul>

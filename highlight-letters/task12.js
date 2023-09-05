@@ -19,7 +19,7 @@ btn.forEach(data => {
 window.addEventListener("keydown", event => {
 
   btn.forEach((item, i) => {
-
+ 
     if(event.key === item.dataset.set || event.key === item.dataset.lower){
       document.querySelector('.active')?.classList.remove('active');
       item.classList.add('active');

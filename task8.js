@@ -7,9 +7,8 @@ beforebegin - до открывающего тега, afterbegin - перед п
 
 const e = ["Kharkiv", "Kiev", ["Borispol", "Irpin"], "Odessa", "Lviv", "Dnieper"];
 
-const data = [["Регион города - 1", "Регион города - 2"], "Kharkiv", "Kiev", 
-["Borispol",["Село под городом - 1", "Село под городом - 2"], "Irpin"],
-"Odessa", "Lviv", "Dnieper",["Село под городом - 1", "Село под городом - 2",["Село под городом - 1", "Село под городом - 2"]]];
+const data = ["Kharkiv", "Kiev",["Borispol",["Село под городом - 1", "Село под городом - 2"], "Irpin"],
+"Odessa", "Lviv", "Dnieper", ["Село под городом - 1", "Село под городом - 2",["Село под городом - 1", "Село под городом - 2"]]];
 
 
 const getList = (arr, parent = document.body) => {
@@ -46,9 +45,9 @@ const getList = (arr, parent = document.body) => {
 
   return parent.appendChild(mainList)
 }
-getList(data)
+getList(e)
 
-// таймер обратного отсчета
+// // таймер обратного отсчета
 // let t = 3;
 // let time = document.getElementsByClassName("clock")[0];
 
